@@ -1,46 +1,30 @@
-# 1117_Pamfil_Rodica-Ana_Maria_TC1_Jurnal_muti-user_integrat_cu_Google_translate
-Proiect Tehnologii Web, anul 3, ID Informatica Economica
-
+# Proiect Tehnologii Web, anul 3, ID Informatica Economica
+1117_Pamfil_Rodica-Ana_Maria_TC1_Jurnal_muti-user_integrat_cu_Google_translate
 # Despre Proiect
 
-Acest proiect se concentrează pe dezvoltarea unui jurnal multi-utilizator cu funcționalități integrate de traducere utilizând serviciul Google Translate. Scopul său este de a oferi utilizatorilor o platformă unde pot ține un jurnal personal și pot traduce conținutul lor în diferite limbi utilizând Google Translate.
+Acest proiect se concentrează pe dezvoltarea unui jurnal multi-utilizator cu funcționalități integrate de traducere utilizând serviciul Google Translate. Scopul său este de a oferi utilizatorilor o platformă unde pot ține un jurnal personal și pot traduce conținutul lor în diferite limbi utilizând Google Translate. Postarile vor fi incarcate dintr-o baza de date. API-ul extern Google TL va traduce postarile:
+Apasand un label de sub fiecare postare, textul va fi tradus din limba specificata in alta.
 
-# Caracteristici Tehnice
-* Tehnologie: Node.js cu Express.
-* Bază de Date: MySQL/PostgreSQL.
-* ORM: Sequelize/TypeORM.
-* Entități:
-  * Utilizator (părinte): Autentificare, informații personale.
-  * Jurnal (copil): Intrări în jurnal, tag-uri.
-* Autentificare: JWT.
-# Frontend
-* Tehnologie: React.js/Angular 2.0.
-* Tip: Single Page Application (SPA).
+Tehnologii incluse:
+- Node.js (express)
+- React.js
+- RESTful
+- Google Translate
 
-# Stil și Calitatea Codului
-*Standarde de Codare: CamelCase, indentare clară.
-*Testare: Jest/Mocha.
-*Documentație: Comentarii în cod.
+Structura bazei de date:
 
-# Structura Git
-* Repository: GitHub.
-* Branch-uri: Funcționalități separate.
-* Commit-uri: Descriptive și regulate.
-* Pull Requests și Code Review: Pentru menținerea calității.
-* CI/CD: GitHub Actions/Jenkins.
-  
-# Plan de Lucru
-* Planificare și Design
-* Dezvoltare Backend și Frontend
-* Integrare cu API-ul LinkedIn
-* Testare
-* Lansare și Mentenanță
-* Documentație
+1) Journal
+- ID: numeric automat (primary key)
+- Title: text (titlul postarii)
+- Post: text (aici va fi stocat continutul postarii din jurnal)
+- User: ID (va fi specificat utilizatorul ce a facut postarea) (foreign key -> Users: ID)
+- CreatedAt: date (data postarii)
 
-# Livrabile
-* Codul Sursă: Disponibil pe GitHub.
-* Documentație: Ghid de utilizare și documentație tehnică.
-* Demo Aplicație: Versiune live pentru demonstrație.
+2) Users
+- ID: numeric automat (primary key)
+- Username: text (nume utilizator)
+- Password: text (parola utilizator)
+- CreatedAt: date (data crearii)
 
 
 
