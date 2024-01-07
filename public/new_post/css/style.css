@@ -1,0 +1,31 @@
+html {
+    font-family: Segoe UI;
+    font-style: normal;
+	font-variant: normal;
+}
+#title {
+    background: lightblue;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#navigation {
+    margin-left: 110px;
+}
+#navigation li{
+    display: inline-block;
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#inputArea {
+    margin-left: 150px;
+    display:inline-table;
+    
+}

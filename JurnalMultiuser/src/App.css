@@ -1,0 +1,68 @@
+html {
+    font-family: Segoe UI;
+    font-style: normal;
+	font-variant: normal;
+}
+#title {
+    background: #176aba;
+    text-align: center;
+    margin-left: 145px;
+    margin-right: 150px;
+    color: #f0f0f0;
+}
+#navigation {
+    margin-left: 150px;
+    background-color: #176aba;
+    margin-right: 150px;
+    color: #f0f0f0;
+}
+.buttonNav {
+    background-color: #176aba;
+    color:#f0f0f0
+}
+.buttonNav:visited {
+    color:#f0f0f0
+}
+.post {
+    margin-left:-5px;
+    background: #ffffff;
+
+}
+#content{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#navigation ul{
+    margin-left: -50px;
+}
+#navigation li{
+    display: inline-block;
+    background-color: #176aba;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sidebarLeft{
+    float:left;
+    border-radius: 5px;
+    padding: 10px;
+    margin:10px;
+    width: 100px;
+    text-indent: left;
+    border: solid;
+}
+.sidebarLeft li {
+    margin-left: -40px;
+}
+.buttonUser {
+    margin-left: -40px;
+    display: inline-block;
+}
+#inputArea {
+    display:inline-table;
+}
